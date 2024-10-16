@@ -1,0 +1,559 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #a9c2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(175, 171, 171);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  background-color: #eadcdc;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* NewsCard and IndividualNews common image styles */
+.news-card img,
+.individual-news img {
+  width: 100%;
+  /* Ensures the image takes up the full width of its container */
+  max-width: 400px;
+  /* Limits the maximum width of the image */
+  height: auto;
+  /* Maintains the aspect ratio of the image */
+  border-radius: 8px;
+  /* Optional: Adds rounded corners to the image */
+  display: block;
+  /* Removes any extra space below the image */
+  margin: 0 auto;
+  /* Centers the image horizontally if it's smaller than its container */
+}
+
+/* Adjusting specific styling for NewsCard component */
+.news-card {
+  max-width: 400px;
+  /* Restricts width of the news card */
+  margin: 20px auto;
+  /* Centers the card on the page with some margin */
+  padding: 20px;
+  border: 1px solid #ddd;
+  /* Border for the news card */
+  border-radius: 10px;
+  /* Optional: Adds rounded corners to the news card */
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Adds a shadow effect */
+}
+
+/* Adjusting specific styling for IndividualNews page */
+.individual-news {
+  max-width: 800px;
+  /* Larger max-width for individual news */
+  margin: 20px auto;
+  /* Centers the content with margin */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.individual-news img {
+  max-width: 100%;
+  /* Adjusts the image to fit within the individual page */
+  height: auto;
+}
+
+/* App.css or Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #88bbf1;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.add-icon {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #28a745;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-icon:hover {
+  background-color: #218838;
+}
+
+.add-icon i {
+  margin-right: 8px;
+}
+
+/* App.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #6c757d;
+  /* Gray background */
+  color: white;
+}
+
+/* App.css */
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Add Icon Styling */
+.add-icon {
+  display: inline-flex;
+  /* Allows alignment of icon */
+  justify-content: center;
+  /* Horizontally center the icon */
+  align-items: center;
+  /* Vertically center the icon */
+  font-size: 20px;
+  color: #fff;
+  background-color: #28a745;
+  /* Green */
+  border-radius: 50%;
+  /* Circle shape */
+  padding: 10px;
+  /* Adds space inside the button */
+  cursor: pointer;
+  width: 40px;
+  /* Fixed width to ensure it's round */
+  height: 40px;
+  /* Fixed height to ensure it's round */
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.add-icon:hover {
+  background-color: #218838;
+  /* Darker green */
+}
+
+.add-icon i {
+  font-size: 30px;
+  /* Icon size */
+}
+
+.add-icon:focus {
+  outline: none;
+}
+
+/* App.css */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 18px;
+}
+
+.modal-content label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.modal-content textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.modal-content .form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-content .form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  /* Green */
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+.cancel-btn {
+  background-color: #dc3545;
+  /* Red */
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+
+/* App.css */
+
+.news-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.view-button {
+  background-color: #28a745;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.view-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* App.css */
+
+/* Individual News Layout */
+.individual-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.individual-news img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.individual-news h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.individual-news p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.individual-news .news-card-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.individual-news .edit-button,
+.individual-news .delete-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.individual-news .edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.individual-news .edit-button:hover {
+  background-color: #0056b3;
+}
+
+.individual-news .delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.individual-news .delete-button:hover {
+  background-color: #c82333;
+}
+
+/* App.css */
+
+/* Edit Modal */
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px -10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+.modal-buttons button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-buttons button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* App.css or IndividualNews.css */
+
+.individual-news-box {
+  max-width: 800px;
+  margin: 0 auto;
+  /* Center align */
+  padding: 20px;
+  background-color: #f2f2f2;
+  /* Light gray background */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  margin-top: 50px;
+}
+
+.individual-news {
+  padding: 20px;
+  background-color: lightgray;
+  /* White background for the content */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  /* Slight shadow */
+  text-align: center;
+}
+
+.news-card-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #1c0a0a;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+span {
+  display: block;
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.news-card-buttons {
+  margin-top: 20px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  /* Red */
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
